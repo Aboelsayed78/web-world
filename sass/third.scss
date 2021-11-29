@@ -1,0 +1,453 @@
+/* ==================== Variables ==================== */
+$main-color: rgb(0, 42, 90);
+$over-color: #000C;
+$sec-color: rgb(70, 183, 218);
+/* ==================== Header ==================== */
+.header{
+    background-image: url(../photos/background-1.jpg);
+    background-size: cover;
+    overflow: hidden;
+    height: 625px;
+/* ==================== Nav bar ==================== */
+    .navbar{
+        height: 80px;
+        width: 100%;
+        border-bottom: 1px solid #CCC;
+        overflow: hidden;
+        .logo{
+            height: 100%;
+            width: 70%;
+            display: inline-block;
+            overflow: hidden;
+            img{
+                width: 12%;
+                padding-top: 1.4%;
+                cursor: pointer;
+            }
+        }
+        .pages{
+            height: 100%;
+            width: 29.6%;
+            display: inline-block;
+            overflow: hidden;
+            ul{
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+                overflow: hidden;
+                li{
+                    height: 100%;
+                    display: inline-block;
+                    padding-top: 10%;
+                    text-align: right;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    width: 32.4%;
+                    color: #CCC;
+                    cursor: pointer;
+                    &:hover{
+                        color: $sec-color;
+                    }
+                }
+            }
+        }
+    }
+/* ==================== Slider ==================== */
+    .slider{
+        width: 100%;
+        overflow: hidden;
+        color: #CCC;
+        .slider_content{
+            width: 94%;
+            display: inline-block;
+            text-align: center;
+            h1{
+                text-transform: capitalize;
+                margin: 0 0 5px 0;
+                font-size: 40px;
+            }
+            p{
+                text-transform: capitalize;
+                font-size: 20px;
+                margin: 0 0 100px 0;
+            }
+            button{
+                background-color: $sec-color;
+                padding: 10px 15px;
+                border: 2px solid transparent;
+                border-radius: 3px;
+                color: #CCC;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover{
+                    background-color: transparent;
+                    color: $sec-color;
+                    border: 2px solid $sec-color;
+                }
+            }
+        }
+        i{
+            display: inline-block;
+            width: 2.6%;
+            font-size: 30px;
+            cursor: pointer;
+            &:hover{
+                color: $sec-color;
+            }
+        }
+        .slider_points{
+            margin-top: 50px;
+            text-align: center;
+            i{
+                width: 30px;
+                font-size: 10px;
+                cursor: pointer;
+                padding: 8px;
+                border: 2px solid transparent;
+                border-radius: 50%;
+                &:hover{
+                    color: $sec-color;
+                }
+            }
+            .selected{
+                border: 2px solid #CCC;
+            }    
+        }
+    }
+}
+
+/* ==================== Introduction Section ==================== */
+.intro-sec{
+    margin: 60px 0px;
+    p{
+        text-align: center;
+        font-size: 20px;
+        padding: 0px 50px;
+        font-weight: bold;
+        color: #555;
+        text-transform: capitalize;
+        line-height: 30px;
+    }
+    .intro-icons{
+        margin-top: 85px;
+        .icon{
+            display: inline-block;
+            width: 30%;
+            margin-right: 4.5%;
+            text-align: center;
+            position: relative;
+            color: #333;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+            i{
+                font-size: 25px;
+                background-color: $sec-color;
+                color: #FFF;
+                padding: 20px;
+                border-radius: 50%;
+                border: 10px solid #FFF;
+                position: absolute;
+                left: 39.5%;
+                top: -40px;
+            }
+            img{
+                margin-bottom: 10px;
+                width: 100%;
+                border-radius: 4px 4px 0 0;
+            }
+            h3{
+                margin: 15px 0px;
+                text-transform: capitalize;
+            }
+            p{
+                padding: 0% 5%;
+                font-size: 15px;
+                text-transform: capitalize;
+                line-height: 20px;
+                margin: 0 0 15px 0;
+            }
+            &:hover{
+                background-color: #EEE;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+/* ==================== Features ==================== */
+.features{
+    margin: 60px 0px;
+    text-align: center;
+    position: relative;
+    i{
+        font-size: 35px;
+        color: $sec-color;
+        position: absolute;
+        top: -15px;
+        right: 540px;
+        background: #FFF;
+        padding: 0 15px;
+    }
+    h2{
+        padding-top: 50px;
+        border-top: 1px solid #AAA;
+        text-transform: uppercase;
+    }
+    .feat{
+        overflow: hidden;
+        height: 200px;
+        margin-top: 100px;
+        .feat-img{
+            display: inline-block;
+            width: 32%;
+            height: 100%;
+            overflow: hidden;
+            img{
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .feat-cont{
+            display: inline-block;
+            width: 62%;
+            text-align: left;
+            padding: 20px 0;
+            h3{
+                text-transform: capitalize;
+            }
+            p{
+                font-size: 17px;
+                color: #555;
+                text-transform: capitalize;
+                line-height: 22px;
+                margin: 15px 0;
+            }
+            button{
+                padding: 10px 15px;
+                border: 2px solid $sec-color;
+                border-radius: 3px;
+                color: $sec-color;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:hover{
+                    background-color: $sec-color;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+    .one{
+        .feat-img{
+            float: left;
+        }
+        .feat-cont{
+            float: right;
+            margin-left: 5.6%;
+        } 
+    }
+    .two{
+        .feat-cont{
+            float: left;
+            margin-right: 5.6%;
+        }
+        .feat-img{
+            float: right;
+        } 
+    }
+}
+
+/* ==================== Latest Projects ==================== */
+.lat-projs{
+    margin: 60px 0px;
+    text-align: center;
+    position: relative;
+    i{
+        font-size: 35px;
+        color: $sec-color;
+        position: absolute;
+        top: -15px;
+        right: 540px;
+        background: #FFF;
+        padding: 0 15px;
+    }
+    h2{
+        padding-top: 50px;
+        border-top: 1px solid #AAA;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 17px;
+        font-weight: bold;
+        color: #555;
+        text-transform: capitalize;
+        margin: 10px 0;
+    }
+    .projs{
+        margin-top: 40px;
+        .project{
+            display: inline-block;
+            width: 24%;
+            margin-right: .9%;
+            text-align: center;
+            position: relative;
+            color: #333;
+            img{
+                border-radius: 5px;
+                border: 2px solid #CCC;
+                margin-bottom: 10px;
+                width: 100%;
+                height: 250px;
+            }
+            h3{
+                padding-top: 15px;
+                border-top: 1px solid #AAA;
+                text-transform: capitalize;
+            }
+            p{
+                font-size: 15px;
+                text-transform: capitalize;
+                line-height: 20px;
+            }
+        }
+        .project:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+   
+/* ==================== Client Testimonials ==================== */
+.testims{
+    margin: 60px 0px;
+    text-align: center;
+    position: relative;
+    i{
+        font-size: 35px;
+        color: $sec-color;
+        position: absolute;
+        top: -15px;
+        right: 540px;
+        background: #FFF;
+        padding: 0 15px;
+    }
+    h2{
+        padding-top: 50px;
+        border-top: 2px solid #AAA;
+        text-transform: uppercase;
+    }
+    .testim-cont{
+        margin-top: 40px;
+        p{
+            font-size: 15px;
+            text-transform: capitalize;
+            line-height: 25px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 25px;
+            padding: 0 10%;
+        }
+        h4{
+            padding-top: 25px;
+            margin: auto 450px;
+            border-top: 2px solid #AAA;
+            text-transform: capitalize;
+        }
+    }
+    .testim-dots{
+        margin-top: 10px;
+        ul{
+            li{
+                display: inline-block;
+                i{
+                    position: static;
+                    color: #AAA;
+                    width: 20px;
+                    font-size: 10px;
+                    cursor: pointer;
+                    padding: 8px;
+                    border: 2px solid transparent;
+                    border-radius: 50%;
+                    &:hover{
+                        color: $sec-color;
+                    }
+                }
+                .selected{
+                    color: $sec-color;
+                }
+            }
+        }
+    }
+}
+
+
+/* ==================== Framework ==================== */
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+.contain {
+    width: 1150px;
+    margin: auto;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $over-color;
+}
+.clear {
+    clear: both;
+}
+
+/* ===== Large Desktop ===== */
+@media (min-width: 1200) {
+    .contain {
+        width: 1150px;
+        margin: auto;
+    }
+}
+/* ===== Large Laptop & Medium Desktop ===== */
+@media (max-width: 1200px) and (min-width: 901px) {
+    .contain {
+        width: 850px;
+        margin: auto;
+    }
+}
+/* ===== Small Labtop & Tablet Landscape ===== */
+@media (max-width: 900px) and (min-width: 601px) {
+    .contain {
+        width: 575px;
+        margin: auto;
+    }
+}
+/* ===== Mobile Landscape & Tablet Portrait ===== */
+@media (max-width: 600px) and (min-width: 401px) {
+    .contain {
+        width: 400px;
+        margin: auto;
+    }
+}
+/* ===== Mobile Portriat ===== */
+@media (max-width: 400px) {
+    .contain {
+        width: 100%;
+        margin: auto;
+    }
+}
